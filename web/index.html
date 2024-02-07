@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="ml-20 mt-10">
+
+    <div class="mt-10">
+        <form class="space-y-5" id="createOrder">
+            <div>
+                <label for="productOptions"></label>
+                <select class="border border-black rounded p-2" id="productOptions">
+                    <option value="">a</option>
+                    <option value="">b</option>
+                </select>
+            </div>
+            <div>
+                <label for="orderAmount"></label>
+                <input class="border border-black rounded p-2" type="number" name="" id="orderAmount" placeholder="Amount">
+            </div>
+            <div>
+                <label for="orderDate"></label>
+                <input class="border border-black rounded p-2" type="date" name="" id="orderDate" placeholder="Date acquired">
+            </div>
+            <div>
+                <button class="border border-black p-2 rounded">Crear orden</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="flex mt-10">
+        <div>
+            <div class="text-lg mb-3">Products</div>
+            <div class="flex place-content-between w-[200px]">
+                <div class="p-2 w-full border border-black">Title</div>
+                <div class="p-2 w-full border border-black">Price</div>
+            </div>
+            <div id="display">
+    
+            </div>
+            <button id="newProduct" class="mt-5 border border-black rounded p-2">
+                Nuevo producto
+            </button>
+        </div>
+    
+        <div id="productForm" class="hidden ml-20 mt-10">
+            <form class="space-y-5" id="createProduct">
+                <div>
+                    <label for="productTitle"></label>
+                    <input class="border border-black rounded p-2" type="text" name="" id="productTitle" placeholder="Title">
+                </div>
+                <div>
+                    <label for="productPrice"></label>
+                    <input class="border border-black rounded p-2" type="number" name="" id="productPrice" placeholder="Price">
+                </div>
+                <div>
+                    <button class="border border-black p-2 rounded">Crear producto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
